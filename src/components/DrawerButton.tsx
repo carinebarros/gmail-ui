@@ -30,8 +30,10 @@ export const DrawerButton = ({
       {...props}
     >
       <View
-        className={clsx("flex-row items-center gap-4 h-14 px-6 ml-2 w-full", {
-          "-ml-14": isDivider,
+        className={clsx("flex-row items-center gap-4 h-14 px-6 w-full", {
+          "-ml-12": isDivider,
+          "-ml-2": !isDivider,
+          "bg-orange-800 rounded-r-full": isFocused,
         })}
       >
         {iconName && (

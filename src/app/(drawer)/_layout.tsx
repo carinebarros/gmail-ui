@@ -9,6 +9,7 @@ import type { DrawerNavigationConfig } from "@react-navigation/drawer/lib/typesc
 
 import { DrawerContent } from "@/components/DrawerContent";
 import { CustomOptions } from "@/types/navigation";
+import { drawerOptions } from "@/utils/drawer";
 
 const DrawerLayout = () => {
   const screenOptions: DrawerNavigationOptions = useMemo(
@@ -42,7 +43,9 @@ const DrawerLayout = () => {
       screenOptions={screenOptions}
       drawerContent={drawerContent}
     >
-      <Drawer.Screen name="(tabs)" options={drawerScreenOptions} />
+      {drawerOptions.map(({ name, ...option }) => (
+        <Drawer.Screen key={option.title} name={name} options={option} />
+      ))}
     </Drawer>
   );
 };
