@@ -4,6 +4,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 
 import { colors } from "@/styles/colors";
 
+import type { IconName } from "@/types";
 import { EmailDataProps } from "@/utils/emails";
 
 import { Avatar } from "@/components/Avatar";
@@ -13,7 +14,7 @@ type EmailProps = {
 };
 
 type StarType = {
-  icon: keyof typeof MaterialIcons.glyphMap;
+  icon: IconName;
   color: string;
 };
 

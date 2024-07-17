@@ -1,8 +1,8 @@
+import { useCallback } from "react";
 import { FlatList, ListRenderItem, Text } from "react-native";
 
 import { EMAILS, EmailDataProps } from "@/utils/emails";
-import { Email } from "./Email";
-import { useCallback } from "react";
+import { Email } from "@/components/Email";
 
 const ListHeaderComponent = () => (
   <Text className="uppercase text-gray-400 text-sm font-subtitle mt-6">
