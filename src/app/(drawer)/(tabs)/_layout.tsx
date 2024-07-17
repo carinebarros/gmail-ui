@@ -2,8 +2,9 @@ import { useMemo } from "react";
 import { MaterialIcons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
-import { colors } from "@/styles/colors";
 import type { IconName } from "@/types";
+
+import { colors } from "@/styles/colors";
 
 type RenderTabBarIconParams = {
   color: string;

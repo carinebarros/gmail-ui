@@ -1,9 +1,9 @@
 import { Pressable } from "react-native";
+import { DrawerActions } from "@react-navigation/native";
 import { MaterialIcons } from "@expo/vector-icons";
+import { useNavigation } from "expo-router";
 
 import { colors } from "@/styles/colors";
-import { useNavigation } from "expo-router";
-import { DrawerActions } from "@react-navigation/native";
 
 export const MenuButton = () => {
   const navigation = useNavigation();
